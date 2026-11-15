@@ -1,0 +1,1413 @@
+{
+  "features": [
+    {
+      "name": "age",
+      "kind": "numeric",
+      "fill": 56.0,
+      "mean": 54.549586776859506,
+      "scale": 8.978372765440131,
+      "coef": -0.06093617935388229
+    },
+    {
+      "name": "trestbps",
+      "kind": "numeric",
+      "fill": 130.0,
+      "mean": 130.95867768595042,
+      "scale": 17.58610302878636,
+      "coef": 0.34055918357603293
+    },
+    {
+      "name": "chol",
+      "kind": "numeric",
+      "fill": 244.5,
+      "mean": 249.8388429752066,
+      "scale": 52.737566192586975,
+      "coef": 0.1789198864073768
+    },
+    {
+      "name": "thalach",
+      "kind": "numeric",
+      "fill": 153.5,
+      "mean": 149.96280991735537,
+      "scale": 22.639527461380734,
+      "coef": -0.37247387120628916
+    },
+    {
+      "name": "oldpeak",
+      "kind": "numeric",
+      "fill": 0.8,
+      "mean": 0.9991735537190083,
+      "scale": 1.1206178835595506,
+      "coef": 0.2595253984583598
+    },
+    {
+      "name": "sex",
+      "kind": "category",
+      "fill": 1.0,
+      "values": [
+        0.0,
+        1.0
+      ],
+      "coef": [
+        -0.7008358908897292,
+        0.6903530973764118
+      ]
+    },
+    {
+      "name": "cp",
+      "kind": "category",
+      "fill": 4.0,
+      "values": [
+        1.0,
+        2.0,
+        3.0,
+        4.0
+      ],
+      "coef": [
+        -0.6191759931524486,
+        0.15289842147342253,
+        -0.5747658356901338,
+        1.0305606138558436
+      ]
+    },
+    {
+      "name": "fbs",
+      "kind": "category",
+      "fill": 0.0,
+      "values": [
+        0.0,
+        1.0
+      ],
+      "coef": [
+        0.09285943309201418,
+        -0.10334222660533074
+      ]
+    },
+    {
+      "name": "restecg",
+      "kind": "category",
+      "fill": 0.0,
+      "values": [
+        0.0,
+        1.0,
+        2.0
+      ],
+      "coef": [
+        -0.15577500264448654,
+        -0.06773008596138015,
+        0.21302229509255005
+      ]
+    },
+    {
+      "name": "exang",
+      "kind": "category",
+      "fill": 0.0,
+      "values": [
+        0.0,
+        1.0
+      ],
+      "coef": [
+        -0.27011479216515505,
+        0.25963199865183856
+      ]
+    },
+    {
+      "name": "slope",
+      "kind": "category",
+      "fill": 1.0,
+      "values": [
+        1.0,
+        2.0,
+        3.0
+      ],
+      "coef": [
+        -0.44063939944452585,
+        0.6034274153709911,
+        -0.17327080943978207
+      ]
+    },
+    {
+      "name": "ca",
+      "kind": "category",
+      "fill": 0.0,
+      "values": [
+        0.0,
+        1.0,
+        2.0,
+        3.0
+      ],
+      "coef": [
+        -1.498640777321029,
+        0.3517542457759075,
+        0.6421710867063103,
+        0.4942326513254946
+      ]
+    },
+    {
+      "name": "thal",
+      "kind": "category",
+      "fill": 3.0,
+      "values": [
+        3.0,
+        6.0,
+        7.0
+      ],
+      "coef": [
+        -0.5402428950844369,
+        -0.2887306118502663,
+        0.8184907134213868
+      ]
+    }
+  ],
+  "intercept": -0.0257904165105582,
+  "metrics": {
+    "n": 61,
+    "accuracy": 0.8852459016393442,
+    "recall": 0.9285714285714286,
+    "precision": 0.8387096774193549,
+    "tn": 28,
+    "fp": 5,
+    "fn": 2,
+    "tp": 26
+  },
+  "auc": 0.9664502164502166,
+  "baseline": {
+    "n": 61,
+    "accuracy": 0.5409836065573771,
+    "recall": 0.0,
+    "precision": 0.0,
+    "tn": 33,
+    "fp": 0,
+    "fn": 28,
+    "tp": 0
+  },
+  "test": [
+    {
+      "id": "Test 01",
+      "values": {
+        "age": 59.0,
+        "sex": 1.0,
+        "cp": 4.0,
+        "trestbps": 138.0,
+        "chol": 271.0,
+        "fbs": 0.0,
+        "restecg": 2.0,
+        "thalach": 182.0,
+        "exang": 0.0,
+        "oldpeak": 0.0,
+        "slope": 1.0,
+        "ca": 0.0,
+        "thal": 3.0
+      },
+      "actual": 0,
+      "probability": 0.20929566898365395
+    },
+    {
+      "id": "Test 02",
+      "values": {
+        "age": 66.0,
+        "sex": 1.0,
+        "cp": 4.0,
+        "trestbps": 160.0,
+        "chol": 228.0,
+        "fbs": 0.0,
+        "restecg": 2.0,
+        "thalach": 138.0,
+        "exang": 0.0,
+        "oldpeak": 2.3,
+        "slope": 1.0,
+        "ca": 0.0,
+        "thal": 6.0
+      },
+      "actual": 0,
+      "probability": 0.6014578248406952
+    },
+    {
+      "id": "Test 03",
+      "values": {
+        "age": 51.0,
+        "sex": 0.0,
+        "cp": 3.0,
+        "trestbps": 130.0,
+        "chol": 256.0,
+        "fbs": 0.0,
+        "restecg": 2.0,
+        "thalach": 149.0,
+        "exang": 0.0,
+        "oldpeak": 0.5,
+        "slope": 1.0,
+        "ca": 0.0,
+        "thal": 3.0
+      },
+      "actual": 0,
+      "probability": 0.02148915628092104
+    },
+    {
+      "id": "Test 04",
+      "values": {
+        "age": 34.0,
+        "sex": 1.0,
+        "cp": 1.0,
+        "trestbps": 118.0,
+        "chol": 182.0,
+        "fbs": 0.0,
+        "restecg": 2.0,
+        "thalach": 174.0,
+        "exang": 0.0,
+        "oldpeak": 0.0,
+        "slope": 1.0,
+        "ca": 0.0,
+        "thal": 3.0
+      },
+      "actual": 0,
+      "probability": 0.03334707999551823
+    },
+    {
+      "id": "Test 05",
+      "values": {
+        "age": 54.0,
+        "sex": 1.0,
+        "cp": 3.0,
+        "trestbps": 150.0,
+        "chol": 232.0,
+        "fbs": 0.0,
+        "restecg": 2.0,
+        "thalach": 165.0,
+        "exang": 0.0,
+        "oldpeak": 1.6,
+        "slope": 1.0,
+        "ca": 0.0,
+        "thal": 7.0
+      },
+      "actual": 0,
+      "probability": 0.311840702352577
+    },
+    {
+      "id": "Test 06",
+      "values": {
+        "age": 60.0,
+        "sex": 0.0,
+        "cp": 3.0,
+        "trestbps": 120.0,
+        "chol": 178.0,
+        "fbs": 1.0,
+        "restecg": 0.0,
+        "thalach": 96.0,
+        "exang": 0.0,
+        "oldpeak": 0.0,
+        "slope": 1.0,
+        "ca": 0.0,
+        "thal": 3.0
+      },
+      "actual": 0,
+      "probability": 0.015570805603347268
+    },
+    {
+      "id": "Test 07",
+      "values": {
+        "age": 63.0,
+        "sex": 0.0,
+        "cp": 2.0,
+        "trestbps": 140.0,
+        "chol": 195.0,
+        "fbs": 0.0,
+        "restecg": 0.0,
+        "thalach": 179.0,
+        "exang": 0.0,
+        "oldpeak": 0.0,
+        "slope": 1.0,
+        "ca": 2.0,
+        "thal": 3.0
+      },
+      "actual": 0,
+      "probability": 0.1168179865294331
+    },
+    {
+      "id": "Test 08",
+      "values": {
+        "age": 74.0,
+        "sex": 0.0,
+        "cp": 2.0,
+        "trestbps": 120.0,
+        "chol": 269.0,
+        "fbs": 0.0,
+        "restecg": 2.0,
+        "thalach": 121.0,
+        "exang": 1.0,
+        "oldpeak": 0.2,
+        "slope": 1.0,
+        "ca": 1.0,
+        "thal": 3.0
+      },
+      "actual": 0,
+      "probability": 0.34861394288043224
+    },
+    {
+      "id": "Test 09",
+      "values": {
+        "age": 35.0,
+        "sex": 1.0,
+        "cp": 4.0,
+        "trestbps": 126.0,
+        "chol": 282.0,
+        "fbs": 0.0,
+        "restecg": 2.0,
+        "thalach": 156.0,
+        "exang": 1.0,
+        "oldpeak": 0.0,
+        "slope": 1.0,
+        "ca": 0.0,
+        "thal": 7.0
+      },
+      "actual": 1,
+      "probability": 0.7220975143385928
+    },
+    {
+      "id": "Test 10",
+      "values": {
+        "age": 45.0,
+        "sex": 0.0,
+        "cp": 4.0,
+        "trestbps": 138.0,
+        "chol": 236.0,
+        "fbs": 0.0,
+        "restecg": 2.0,
+        "thalach": 152.0,
+        "exang": 1.0,
+        "oldpeak": 0.2,
+        "slope": 2.0,
+        "ca": 0.0,
+        "thal": 3.0
+      },
+      "actual": 0,
+      "probability": 0.3474228231707721
+    },
+    {
+      "id": "Test 11",
+      "values": {
+        "age": 62.0,
+        "sex": 1.0,
+        "cp": 2.0,
+        "trestbps": 120.0,
+        "chol": 281.0,
+        "fbs": 0.0,
+        "restecg": 2.0,
+        "thalach": 103.0,
+        "exang": 0.0,
+        "oldpeak": 1.4,
+        "slope": 2.0,
+        "ca": 1.0,
+        "thal": 7.0
+      },
+      "actual": 1,
+      "probability": 0.9656205922978888
+    },
+    {
+      "id": "Test 12",
+      "values": {
+        "age": 58.0,
+        "sex": 0.0,
+        "cp": 1.0,
+        "trestbps": 150.0,
+        "chol": 283.0,
+        "fbs": 1.0,
+        "restecg": 2.0,
+        "thalach": 162.0,
+        "exang": 0.0,
+        "oldpeak": 1.0,
+        "slope": 1.0,
+        "ca": 0.0,
+        "thal": 3.0
+      },
+      "actual": 0,
+      "probability": 0.02352735351596271
+    },
+    {
+      "id": "Test 13",
+      "values": {
+        "age": 38.0,
+        "sex": 1.0,
+        "cp": 3.0,
+        "trestbps": 138.0,
+        "chol": 175.0,
+        "fbs": 0.0,
+        "restecg": 0.0,
+        "thalach": 173.0,
+        "exang": 0.0,
+        "oldpeak": 0.0,
+        "slope": 1.0,
+        "ca": null,
+        "thal": 3.0
+      },
+      "actual": 0,
+      "probability": 0.034277224657678004
+    },
+    {
+      "id": "Test 14",
+      "values": {
+        "age": 66.0,
+        "sex": 1.0,
+        "cp": 2.0,
+        "trestbps": 160.0,
+        "chol": 246.0,
+        "fbs": 0.0,
+        "restecg": 0.0,
+        "thalach": 120.0,
+        "exang": 1.0,
+        "oldpeak": 0.0,
+        "slope": 2.0,
+        "ca": 3.0,
+        "thal": 6.0
+      },
+      "actual": 1,
+      "probability": 0.9279970073687692
+    },
+    {
+      "id": "Test 15",
+      "values": {
+        "age": 54.0,
+        "sex": 1.0,
+        "cp": 4.0,
+        "trestbps": 120.0,
+        "chol": 188.0,
+        "fbs": 0.0,
+        "restecg": 0.0,
+        "thalach": 113.0,
+        "exang": 0.0,
+        "oldpeak": 1.4,
+        "slope": 2.0,
+        "ca": 1.0,
+        "thal": 7.0
+      },
+      "actual": 1,
+      "probability": 0.9682757126618233
+    },
+    {
+      "id": "Test 16",
+      "values": {
+        "age": 59.0,
+        "sex": 1.0,
+        "cp": 4.0,
+        "trestbps": 164.0,
+        "chol": 176.0,
+        "fbs": 1.0,
+        "restecg": 2.0,
+        "thalach": 90.0,
+        "exang": 0.0,
+        "oldpeak": 1.0,
+        "slope": 2.0,
+        "ca": 2.0,
+        "thal": 6.0
+      },
+      "actual": 1,
+      "probability": 0.9789053904900726
+    },
+    {
+      "id": "Test 17",
+      "values": {
+        "age": 58.0,
+        "sex": 1.0,
+        "cp": 3.0,
+        "trestbps": 132.0,
+        "chol": 224.0,
+        "fbs": 0.0,
+        "restecg": 2.0,
+        "thalach": 173.0,
+        "exang": 0.0,
+        "oldpeak": 3.2,
+        "slope": 1.0,
+        "ca": 2.0,
+        "thal": 7.0
+      },
+      "actual": 1,
+      "probability": 0.7659079615260735
+    },
+    {
+      "id": "Test 18",
+      "values": {
+        "age": 69.0,
+        "sex": 1.0,
+        "cp": 1.0,
+        "trestbps": 160.0,
+        "chol": 234.0,
+        "fbs": 1.0,
+        "restecg": 2.0,
+        "thalach": 131.0,
+        "exang": 0.0,
+        "oldpeak": 0.1,
+        "slope": 2.0,
+        "ca": 1.0,
+        "thal": 3.0
+      },
+      "actual": 0,
+      "probability": 0.693006946059652
+    },
+    {
+      "id": "Test 19",
+      "values": {
+        "age": 62.0,
+        "sex": 0.0,
+        "cp": 4.0,
+        "trestbps": 140.0,
+        "chol": 268.0,
+        "fbs": 0.0,
+        "restecg": 2.0,
+        "thalach": 160.0,
+        "exang": 0.0,
+        "oldpeak": 3.6,
+        "slope": 3.0,
+        "ca": 2.0,
+        "thal": 3.0
+      },
+      "actual": 1,
+      "probability": 0.7092383556910206
+    },
+    {
+      "id": "Test 20",
+      "values": {
+        "age": 57.0,
+        "sex": 1.0,
+        "cp": 4.0,
+        "trestbps": 130.0,
+        "chol": 131.0,
+        "fbs": 0.0,
+        "restecg": 0.0,
+        "thalach": 115.0,
+        "exang": 1.0,
+        "oldpeak": 1.2,
+        "slope": 2.0,
+        "ca": 1.0,
+        "thal": 7.0
+      },
+      "actual": 1,
+      "probability": 0.9791405629751844
+    },
+    {
+      "id": "Test 21",
+      "values": {
+        "age": 59.0,
+        "sex": 1.0,
+        "cp": 4.0,
+        "trestbps": 135.0,
+        "chol": 234.0,
+        "fbs": 0.0,
+        "restecg": 0.0,
+        "thalach": 161.0,
+        "exang": 0.0,
+        "oldpeak": 0.5,
+        "slope": 2.0,
+        "ca": 0.0,
+        "thal": 7.0
+      },
+      "actual": 0,
+      "probability": 0.7276037424743871
+    },
+    {
+      "id": "Test 22",
+      "values": {
+        "age": 42.0,
+        "sex": 1.0,
+        "cp": 3.0,
+        "trestbps": 130.0,
+        "chol": 180.0,
+        "fbs": 0.0,
+        "restecg": 0.0,
+        "thalach": 150.0,
+        "exang": 0.0,
+        "oldpeak": 0.0,
+        "slope": 1.0,
+        "ca": 0.0,
+        "thal": 3.0
+      },
+      "actual": 0,
+      "probability": 0.042083781420704874
+    },
+    {
+      "id": "Test 23",
+      "values": {
+        "age": 43.0,
+        "sex": 0.0,
+        "cp": 4.0,
+        "trestbps": 132.0,
+        "chol": 341.0,
+        "fbs": 1.0,
+        "restecg": 2.0,
+        "thalach": 136.0,
+        "exang": 1.0,
+        "oldpeak": 3.0,
+        "slope": 2.0,
+        "ca": 0.0,
+        "thal": 7.0
+      },
+      "actual": 1,
+      "probability": 0.8452012784452432
+    },
+    {
+      "id": "Test 24",
+      "values": {
+        "age": 53.0,
+        "sex": 1.0,
+        "cp": 3.0,
+        "trestbps": 130.0,
+        "chol": 246.0,
+        "fbs": 1.0,
+        "restecg": 2.0,
+        "thalach": 173.0,
+        "exang": 0.0,
+        "oldpeak": 0.0,
+        "slope": 1.0,
+        "ca": 3.0,
+        "thal": 3.0
+      },
+      "actual": 0,
+      "probability": 0.23347798096444003
+    },
+    {
+      "id": "Test 25",
+      "values": {
+        "age": 55.0,
+        "sex": 0.0,
+        "cp": 4.0,
+        "trestbps": 180.0,
+        "chol": 327.0,
+        "fbs": 0.0,
+        "restecg": 1.0,
+        "thalach": 117.0,
+        "exang": 1.0,
+        "oldpeak": 3.4,
+        "slope": 2.0,
+        "ca": 0.0,
+        "thal": 3.0
+      },
+      "actual": 1,
+      "probability": 0.8115306959388917
+    },
+    {
+      "id": "Test 26",
+      "values": {
+        "age": 39.0,
+        "sex": 0.0,
+        "cp": 3.0,
+        "trestbps": 138.0,
+        "chol": 220.0,
+        "fbs": 0.0,
+        "restecg": 0.0,
+        "thalach": 152.0,
+        "exang": 0.0,
+        "oldpeak": 0.0,
+        "slope": 2.0,
+        "ca": 0.0,
+        "thal": 3.0
+      },
+      "actual": 0,
+      "probability": 0.03938699178320007
+    },
+    {
+      "id": "Test 27",
+      "values": {
+        "age": 54.0,
+        "sex": 0.0,
+        "cp": 3.0,
+        "trestbps": 160.0,
+        "chol": 201.0,
+        "fbs": 0.0,
+        "restecg": 0.0,
+        "thalach": 163.0,
+        "exang": 0.0,
+        "oldpeak": 0.0,
+        "slope": 1.0,
+        "ca": 1.0,
+        "thal": 3.0
+      },
+      "actual": 0,
+      "probability": 0.09037919511472352
+    },
+    {
+      "id": "Test 28",
+      "values": {
+        "age": 49.0,
+        "sex": 1.0,
+        "cp": 3.0,
+        "trestbps": 120.0,
+        "chol": 188.0,
+        "fbs": 0.0,
+        "restecg": 0.0,
+        "thalach": 139.0,
+        "exang": 0.0,
+        "oldpeak": 2.0,
+        "slope": 2.0,
+        "ca": 3.0,
+        "thal": 7.0
+      },
+      "actual": 1,
+      "probability": 0.8456280241192583
+    },
+    {
+      "id": "Test 29",
+      "values": {
+        "age": 37.0,
+        "sex": 1.0,
+        "cp": 3.0,
+        "trestbps": 130.0,
+        "chol": 250.0,
+        "fbs": 0.0,
+        "restecg": 0.0,
+        "thalach": 187.0,
+        "exang": 0.0,
+        "oldpeak": 3.5,
+        "slope": 3.0,
+        "ca": 0.0,
+        "thal": 3.0
+      },
+      "actual": 0,
+      "probability": 0.08436408078132868
+    },
+    {
+      "id": "Test 30",
+      "values": {
+        "age": 61.0,
+        "sex": 1.0,
+        "cp": 4.0,
+        "trestbps": 138.0,
+        "chol": 166.0,
+        "fbs": 0.0,
+        "restecg": 2.0,
+        "thalach": 125.0,
+        "exang": 1.0,
+        "oldpeak": 3.6,
+        "slope": 2.0,
+        "ca": 1.0,
+        "thal": 3.0
+      },
+      "actual": 1,
+      "probability": 0.9705949994810522
+    },
+    {
+      "id": "Test 31",
+      "values": {
+        "age": 41.0,
+        "sex": 1.0,
+        "cp": 2.0,
+        "trestbps": 135.0,
+        "chol": 203.0,
+        "fbs": 0.0,
+        "restecg": 0.0,
+        "thalach": 132.0,
+        "exang": 0.0,
+        "oldpeak": 0.0,
+        "slope": 2.0,
+        "ca": 0.0,
+        "thal": 6.0
+      },
+      "actual": 0,
+      "probability": 0.3488568570966516
+    },
+    {
+      "id": "Test 32",
+      "values": {
+        "age": 58.0,
+        "sex": 0.0,
+        "cp": 4.0,
+        "trestbps": 170.0,
+        "chol": 225.0,
+        "fbs": 1.0,
+        "restecg": 2.0,
+        "thalach": 146.0,
+        "exang": 1.0,
+        "oldpeak": 2.8,
+        "slope": 2.0,
+        "ca": 2.0,
+        "thal": 6.0
+      },
+      "actual": 1,
+      "probability": 0.9405162129885432
+    },
+    {
+      "id": "Test 33",
+      "values": {
+        "age": 44.0,
+        "sex": 1.0,
+        "cp": 4.0,
+        "trestbps": 120.0,
+        "chol": 169.0,
+        "fbs": 0.0,
+        "restecg": 0.0,
+        "thalach": 144.0,
+        "exang": 1.0,
+        "oldpeak": 2.8,
+        "slope": 3.0,
+        "ca": 0.0,
+        "thal": 6.0
+      },
+      "actual": 1,
+      "probability": 0.50786951317376
+    },
+    {
+      "id": "Test 34",
+      "values": {
+        "age": 58.0,
+        "sex": 1.0,
+        "cp": 2.0,
+        "trestbps": 125.0,
+        "chol": 220.0,
+        "fbs": 0.0,
+        "restecg": 0.0,
+        "thalach": 144.0,
+        "exang": 0.0,
+        "oldpeak": 0.4,
+        "slope": 2.0,
+        "ca": null,
+        "thal": 7.0
+      },
+      "actual": 0,
+      "probability": 0.5317086936937045
+    },
+    {
+      "id": "Test 35",
+      "values": {
+        "age": 45.0,
+        "sex": 1.0,
+        "cp": 4.0,
+        "trestbps": 115.0,
+        "chol": 260.0,
+        "fbs": 0.0,
+        "restecg": 2.0,
+        "thalach": 185.0,
+        "exang": 0.0,
+        "oldpeak": 0.0,
+        "slope": 1.0,
+        "ca": 0.0,
+        "thal": 3.0
+      },
+      "actual": 0,
+      "probability": 0.14601116082233764
+    },
+    {
+      "id": "Test 36",
+      "values": {
+        "age": 58.0,
+        "sex": 1.0,
+        "cp": 4.0,
+        "trestbps": 125.0,
+        "chol": 300.0,
+        "fbs": 0.0,
+        "restecg": 2.0,
+        "thalach": 171.0,
+        "exang": 0.0,
+        "oldpeak": 0.0,
+        "slope": 1.0,
+        "ca": 2.0,
+        "thal": 7.0
+      },
+      "actual": 1,
+      "probability": 0.9006771233251659
+    },
+    {
+      "id": "Test 37",
+      "values": {
+        "age": 41.0,
+        "sex": 1.0,
+        "cp": 3.0,
+        "trestbps": 130.0,
+        "chol": 214.0,
+        "fbs": 0.0,
+        "restecg": 2.0,
+        "thalach": 168.0,
+        "exang": 0.0,
+        "oldpeak": 2.0,
+        "slope": 2.0,
+        "ca": 0.0,
+        "thal": 3.0
+      },
+      "actual": 0,
+      "probability": 0.19418282206126627
+    },
+    {
+      "id": "Test 38",
+      "values": {
+        "age": 60.0,
+        "sex": 1.0,
+        "cp": 3.0,
+        "trestbps": 140.0,
+        "chol": 185.0,
+        "fbs": 0.0,
+        "restecg": 2.0,
+        "thalach": 155.0,
+        "exang": 0.0,
+        "oldpeak": 3.0,
+        "slope": 2.0,
+        "ca": 0.0,
+        "thal": 3.0
+      },
+      "actual": 1,
+      "probability": 0.26673101999404586
+    },
+    {
+      "id": "Test 39",
+      "values": {
+        "age": 52.0,
+        "sex": 1.0,
+        "cp": 3.0,
+        "trestbps": 138.0,
+        "chol": 223.0,
+        "fbs": 0.0,
+        "restecg": 0.0,
+        "thalach": 169.0,
+        "exang": 0.0,
+        "oldpeak": 0.0,
+        "slope": 1.0,
+        "ca": null,
+        "thal": 3.0
+      },
+      "actual": 0,
+      "probability": 0.038987094972444104
+    },
+    {
+      "id": "Test 40",
+      "values": {
+        "age": 61.0,
+        "sex": 1.0,
+        "cp": 4.0,
+        "trestbps": 148.0,
+        "chol": 203.0,
+        "fbs": 0.0,
+        "restecg": 0.0,
+        "thalach": 161.0,
+        "exang": 0.0,
+        "oldpeak": 0.0,
+        "slope": 1.0,
+        "ca": 1.0,
+        "thal": 7.0
+      },
+      "actual": 1,
+      "probability": 0.8588817978927646
+    },
+    {
+      "id": "Test 41",
+      "values": {
+        "age": 62.0,
+        "sex": 1.0,
+        "cp": 3.0,
+        "trestbps": 130.0,
+        "chol": 231.0,
+        "fbs": 0.0,
+        "restecg": 0.0,
+        "thalach": 146.0,
+        "exang": 0.0,
+        "oldpeak": 1.8,
+        "slope": 2.0,
+        "ca": 3.0,
+        "thal": 7.0
+      },
+      "actual": 0,
+      "probability": 0.8569928409269507
+    },
+    {
+      "id": "Test 42",
+      "values": {
+        "age": 58.0,
+        "sex": 1.0,
+        "cp": 4.0,
+        "trestbps": 128.0,
+        "chol": 216.0,
+        "fbs": 0.0,
+        "restecg": 2.0,
+        "thalach": 131.0,
+        "exang": 1.0,
+        "oldpeak": 2.2,
+        "slope": 2.0,
+        "ca": 3.0,
+        "thal": 7.0
+      },
+      "actual": 1,
+      "probability": 0.989761970351531
+    },
+    {
+      "id": "Test 43",
+      "values": {
+        "age": 54.0,
+        "sex": 1.0,
+        "cp": 4.0,
+        "trestbps": 122.0,
+        "chol": 286.0,
+        "fbs": 0.0,
+        "restecg": 2.0,
+        "thalach": 116.0,
+        "exang": 1.0,
+        "oldpeak": 3.2,
+        "slope": 2.0,
+        "ca": 2.0,
+        "thal": 3.0
+      },
+      "actual": 1,
+      "probability": 0.9817895028440292
+    },
+    {
+      "id": "Test 44",
+      "values": {
+        "age": 66.0,
+        "sex": 0.0,
+        "cp": 4.0,
+        "trestbps": 178.0,
+        "chol": 228.0,
+        "fbs": 1.0,
+        "restecg": 0.0,
+        "thalach": 165.0,
+        "exang": 1.0,
+        "oldpeak": 1.0,
+        "slope": 2.0,
+        "ca": 2.0,
+        "thal": 7.0
+      },
+      "actual": 1,
+      "probability": 0.9468736999752974
+    },
+    {
+      "id": "Test 45",
+      "values": {
+        "age": 46.0,
+        "sex": 1.0,
+        "cp": 2.0,
+        "trestbps": 101.0,
+        "chol": 197.0,
+        "fbs": 1.0,
+        "restecg": 0.0,
+        "thalach": 156.0,
+        "exang": 0.0,
+        "oldpeak": 0.0,
+        "slope": 1.0,
+        "ca": 0.0,
+        "thal": 7.0
+      },
+      "actual": 0,
+      "probability": 0.13415837616790915
+    },
+    {
+      "id": "Test 46",
+      "values": {
+        "age": 53.0,
+        "sex": 0.0,
+        "cp": 3.0,
+        "trestbps": 128.0,
+        "chol": 216.0,
+        "fbs": 0.0,
+        "restecg": 2.0,
+        "thalach": 115.0,
+        "exang": 0.0,
+        "oldpeak": 0.0,
+        "slope": 1.0,
+        "ca": 0.0,
+        "thal": null
+      },
+      "actual": 0,
+      "probability": 0.027574317404942823
+    },
+    {
+      "id": "Test 47",
+      "values": {
+        "age": 55.0,
+        "sex": 0.0,
+        "cp": 4.0,
+        "trestbps": 128.0,
+        "chol": 205.0,
+        "fbs": 0.0,
+        "restecg": 1.0,
+        "thalach": 130.0,
+        "exang": 1.0,
+        "oldpeak": 2.0,
+        "slope": 2.0,
+        "ca": 1.0,
+        "thal": 7.0
+      },
+      "actual": 1,
+      "probability": 0.9376206707086184
+    },
+    {
+      "id": "Test 48",
+      "values": {
+        "age": 54.0,
+        "sex": 0.0,
+        "cp": 3.0,
+        "trestbps": 110.0,
+        "chol": 214.0,
+        "fbs": 0.0,
+        "restecg": 0.0,
+        "thalach": 158.0,
+        "exang": 0.0,
+        "oldpeak": 1.6,
+        "slope": 2.0,
+        "ca": 0.0,
+        "thal": 3.0
+      },
+      "actual": 0,
+      "probability": 0.02694371790288263
+    },
+    {
+      "id": "Test 49",
+      "values": {
+        "age": 45.0,
+        "sex": 1.0,
+        "cp": 4.0,
+        "trestbps": 142.0,
+        "chol": 309.0,
+        "fbs": 0.0,
+        "restecg": 2.0,
+        "thalach": 147.0,
+        "exang": 1.0,
+        "oldpeak": 0.0,
+        "slope": 2.0,
+        "ca": 3.0,
+        "thal": 7.0
+      },
+      "actual": 1,
+      "probability": 0.988721081074817
+    },
+    {
+      "id": "Test 50",
+      "values": {
+        "age": 42.0,
+        "sex": 1.0,
+        "cp": 3.0,
+        "trestbps": 120.0,
+        "chol": 240.0,
+        "fbs": 1.0,
+        "restecg": 0.0,
+        "thalach": 194.0,
+        "exang": 0.0,
+        "oldpeak": 0.8,
+        "slope": 3.0,
+        "ca": 0.0,
+        "thal": 7.0
+      },
+      "actual": 0,
+      "probability": 0.09762273929768185
+    },
+    {
+      "id": "Test 51",
+      "values": {
+        "age": 43.0,
+        "sex": 0.0,
+        "cp": 3.0,
+        "trestbps": 122.0,
+        "chol": 213.0,
+        "fbs": 0.0,
+        "restecg": 0.0,
+        "thalach": 165.0,
+        "exang": 0.0,
+        "oldpeak": 0.2,
+        "slope": 2.0,
+        "ca": 0.0,
+        "thal": 3.0
+      },
+      "actual": 0,
+      "probability": 0.02360430133533331
+    },
+    {
+      "id": "Test 52",
+      "values": {
+        "age": 60.0,
+        "sex": 1.0,
+        "cp": 4.0,
+        "trestbps": 125.0,
+        "chol": 258.0,
+        "fbs": 0.0,
+        "restecg": 2.0,
+        "thalach": 141.0,
+        "exang": 1.0,
+        "oldpeak": 2.8,
+        "slope": 2.0,
+        "ca": 1.0,
+        "thal": 7.0
+      },
+      "actual": 1,
+      "probability": 0.9887283556076262
+    },
+    {
+      "id": "Test 53",
+      "values": {
+        "age": 51.0,
+        "sex": 1.0,
+        "cp": 3.0,
+        "trestbps": 94.0,
+        "chol": 227.0,
+        "fbs": 0.0,
+        "restecg": 0.0,
+        "thalach": 154.0,
+        "exang": 1.0,
+        "oldpeak": 0.0,
+        "slope": 1.0,
+        "ca": 1.0,
+        "thal": 7.0
+      },
+      "actual": 0,
+      "probability": 0.4873003933466922
+    },
+    {
+      "id": "Test 54",
+      "values": {
+        "age": 44.0,
+        "sex": 1.0,
+        "cp": 3.0,
+        "trestbps": 130.0,
+        "chol": 233.0,
+        "fbs": 0.0,
+        "restecg": 0.0,
+        "thalach": 179.0,
+        "exang": 1.0,
+        "oldpeak": 0.4,
+        "slope": 1.0,
+        "ca": 0.0,
+        "thal": 3.0
+      },
+      "actual": 0,
+      "probability": 0.0565938247083098
+    },
+    {
+      "id": "Test 55",
+      "values": {
+        "age": 59.0,
+        "sex": 0.0,
+        "cp": 4.0,
+        "trestbps": 174.0,
+        "chol": 249.0,
+        "fbs": 0.0,
+        "restecg": 0.0,
+        "thalach": 143.0,
+        "exang": 1.0,
+        "oldpeak": 0.0,
+        "slope": 2.0,
+        "ca": 0.0,
+        "thal": 3.0
+      },
+      "actual": 1,
+      "probability": 0.43752918161569426
+    },
+    {
+      "id": "Test 56",
+      "values": {
+        "age": 61.0,
+        "sex": 1.0,
+        "cp": 4.0,
+        "trestbps": 140.0,
+        "chol": 207.0,
+        "fbs": 0.0,
+        "restecg": 2.0,
+        "thalach": 138.0,
+        "exang": 1.0,
+        "oldpeak": 1.9,
+        "slope": 1.0,
+        "ca": 1.0,
+        "thal": 7.0
+      },
+      "actual": 1,
+      "probability": 0.9671262385888154
+    },
+    {
+      "id": "Test 57",
+      "values": {
+        "age": 58.0,
+        "sex": 1.0,
+        "cp": 4.0,
+        "trestbps": 114.0,
+        "chol": 318.0,
+        "fbs": 0.0,
+        "restecg": 1.0,
+        "thalach": 140.0,
+        "exang": 0.0,
+        "oldpeak": 4.4,
+        "slope": 3.0,
+        "ca": 3.0,
+        "thal": 6.0
+      },
+      "actual": 1,
+      "probability": 0.9099727831559139
+    },
+    {
+      "id": "Test 58",
+      "values": {
+        "age": 61.0,
+        "sex": 1.0,
+        "cp": 1.0,
+        "trestbps": 134.0,
+        "chol": 234.0,
+        "fbs": 0.0,
+        "restecg": 0.0,
+        "thalach": 145.0,
+        "exang": 0.0,
+        "oldpeak": 2.6,
+        "slope": 2.0,
+        "ca": 2.0,
+        "thal": 3.0
+      },
+      "actual": 1,
+      "probability": 0.6966679662985295
+    },
+    {
+      "id": "Test 59",
+      "values": {
+        "age": 63.0,
+        "sex": 0.0,
+        "cp": 3.0,
+        "trestbps": 135.0,
+        "chol": 252.0,
+        "fbs": 0.0,
+        "restecg": 2.0,
+        "thalach": 172.0,
+        "exang": 0.0,
+        "oldpeak": 0.0,
+        "slope": 1.0,
+        "ca": 0.0,
+        "thal": 3.0
+      },
+      "actual": 0,
+      "probability": 0.01324408199163698
+    },
+    {
+      "id": "Test 60",
+      "values": {
+        "age": 55.0,
+        "sex": 0.0,
+        "cp": 2.0,
+        "trestbps": 132.0,
+        "chol": 342.0,
+        "fbs": 0.0,
+        "restecg": 0.0,
+        "thalach": 166.0,
+        "exang": 0.0,
+        "oldpeak": 1.2,
+        "slope": 1.0,
+        "ca": 0.0,
+        "thal": 3.0
+      },
+      "actual": 0,
+      "probability": 0.036479519414919684
+    },
+    {
+      "id": "Test 61",
+      "values": {
+        "age": 70.0,
+        "sex": 1.0,
+        "cp": 4.0,
+        "trestbps": 130.0,
+        "chol": 322.0,
+        "fbs": 0.0,
+        "restecg": 2.0,
+        "thalach": 109.0,
+        "exang": 0.0,
+        "oldpeak": 2.4,
+        "slope": 2.0,
+        "ca": 3.0,
+        "thal": 3.0
+      },
+      "actual": 1,
+      "probability": 0.9679552438375258
+    }
+  ],
+  "train_n": 242,
+  "test_n": 61,
+  "seed": 42,
+  "source_sha256": "a74b7efa387bc9d108d7d0115d831fe9b414b29ae7124f331b622b4efa0427c8",
+  "versions": {
+    "sklearn": "1.8.0"
+  }
+}
